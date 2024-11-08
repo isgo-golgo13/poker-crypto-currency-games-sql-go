@@ -76,9 +76,9 @@ VALUES ('Count Dracula', 'countdracula@transylvanians.com', '2024-11-01 09:30:00
 -- Insert a ticket for the game and player into `crypto_game_tickets`
 INSERT INTO crypto_game_tickets (game_id, purchase_time, player_id, ticket_number, status, prize_amount)
 VALUES (
-    (SELECT game_id FROM eql_games WHERE game_name = 'Poker Train'),  -- Linking to the created game
+    (SELECT game_id FROM crypto_games WHERE game_name = 'Poker Train'),  -- Linking to the created game
     '2024-11-01 10:15:00',
-    (SELECT player_id FROM eql_game_players WHERE player_name = 'Count Dracula'),  -- Linking to the created player
+    (SELECT player_id FROM crypto_game_players WHERE player_name = 'Count Dracula'),  -- Linking to the created player
     'TICKET12345',
     'pending',
     100.50
