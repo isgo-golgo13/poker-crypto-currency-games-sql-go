@@ -1,2 +1,2 @@
-# Cryptocurrency Poker Games Go Application using CloudNativePG
-Cryptocurrency Poker Games Postgres SQL DB Application Golang
+# Crypto Poker Games App using CloudNativePG
+Cryptocurrency Poker Games Postgres SQL DB Application using Go 
